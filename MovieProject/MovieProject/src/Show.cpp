@@ -1,4 +1,4 @@
-#include "Show.h"
+#include "../include/Show.h"
 #include <iostream>
 
 Show::Show(const Movie& movie, std::string time, int totalSeats)
@@ -35,3 +35,4 @@ Movie Show::getMovie() const {
 std::string Show::getTime() const {
     return time;
 }
+ 

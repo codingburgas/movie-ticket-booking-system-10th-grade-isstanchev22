@@ -1,39 +1,33 @@
-﻿#include<iostream>
-#include<iomanip>
-#include<fstream>
+﻿#include <iostream>
+#include "../include/Menu.h"
+
 using namespace std;
 
-void ascii() {
-	ifstream f("ascii.txt");
-	if (f.is_open())
-		cout << f.rdbuf();
+void showMainMenu() {
+    cout << "\n===== Welcome to MovieMate =====\n";
+    cout << "1. Login\n";
+    cout << "2. Register\n";
+    cout << "3. Movies\n";
+    cout << "4. Locations\n";
+    cout << "5. Contact\n";
+    cout << "0. Exit\n";
+    cout << "==================================\n";
 }
 
-void printMenu() {
-	ascii();
-	int choice;
-	cout << "1|    Login / Register" << endl;
-	cout << "2|    View Top Movies" << endl;
-	cout << "3|    Locations     " << endl;
-	while (true) {
-		cin >> choice;
-		switch (choice) {
-		case 1:
-			ascii();
-			break;
-		case 2:
-			ascii();
-			break;
-		case 3:
-			ascii();
-			break;
-		}
-	}
-	}
-int main() {
-	printMenu();
-	}
+void showUserMenu() {
+    cout << "\n===== User Menu =====\n";
+    cout << "1. View Movies\n";
+    cout << "2. Book Tickets\n";
+    cout << "3. My Bookings\n";
+    cout << "0. Logout\n";
+    cout << "======================\n";
+}
 
-
+void showContactInfo() {
+    cout << "\n===== Contact Us =====\n";
+    cout << "Email: support@cinebooking.com\n";
+    cout << "Phone: +1 (555) 123-4567\n";
+    cout << "=======================\n";
+}
 
 
