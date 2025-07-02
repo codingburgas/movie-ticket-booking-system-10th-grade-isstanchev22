@@ -16,7 +16,6 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="ascii.txt" />
-    <Text Include="include\users.txt" />
     <Text Include="bookings.txt" />
     <Text Include="files.txt" />
     <Text Include="users.txt" />
