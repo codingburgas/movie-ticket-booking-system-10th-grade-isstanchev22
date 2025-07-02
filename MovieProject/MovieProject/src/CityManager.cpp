@@ -1,5 +1,7 @@
 
 #include "../include/CityManager.h"
+#include "../include/Show.h"
+
 #include <iostream>
 
 Show::Show(const std::string& time) : time(time) {}

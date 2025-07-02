@@ -1,8 +1,8 @@
 
 #pragma once
-#include "MovieManager.h"
-#include "ShowManager.h"
-#include "Booking.h"
+#include "../include/MovieManager.h"
+#include "../include/ShowManager.h"
+#include "../include/Booking.h"
 #include <vector>
 
 class MovieBookingSystem {
@@ -16,6 +16,7 @@ private:
     void adminMenu();
     void userMenu();
     void bookSeats();
+    void start();
 
 public:
     void run();

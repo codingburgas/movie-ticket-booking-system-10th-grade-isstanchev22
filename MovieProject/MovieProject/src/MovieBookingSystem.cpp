@@ -40,7 +40,7 @@ void MovieBookingSystem::adminMenu() {
         } else if (choice == 2) {
             int id;
             std::cout << "Enter movie ID to delete: "; std::cin >> id;
-            movieManager.deleteMovie(id);
+            movieManager.deleteMovie(std::to_string(id));
         } else if (choice == 3) {
             int movieId, seats;
             std::string time;
@@ -148,8 +148,8 @@ void MovieBookingSystem::start() {
     }
 
     if (isAdmin) {
-        runAdminMenu();
+        adminMenu();
     } else {
-        runUserMenu();
+        userMenu();
     }
 }

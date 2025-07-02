@@ -4,14 +4,13 @@
 #include <vector>
 
 class Show {
-private:
+
+public:
     int showId;
     int movieId;
     std::string time;  // e.g., "2025-07-01 18:00"
     int totalSeats;
-    std::vector<bool> seatStatus;  // true = booked
-
-public:
+    std::vector<bool> seatStatus;  // true = booked 
     Show();
     Show(int showId, int movieId, std::string time, int totalSeats);
 

@@ -1,13 +1,9 @@
 
 #pragma once
 #include <string>
+#include "../include/Show.h"
 #include <vector>
 
-class Show {
-public:
-    std::string time;
-    Show(const std::string& time);
-};
 
 class Movie {
 public:

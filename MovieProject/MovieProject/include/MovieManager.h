@@ -1,13 +1,8 @@
-
 #pragma once
 #include <string>
+#include "../include/Show.h"
 #include <vector>
 
-class Show {
-public:
-    std::string time;
-    Show(const std::string& time);
-};
 
 class Movie {
 public:
@@ -30,4 +25,9 @@ public:
     Show& getShow(int movieIndex, int showIndex);
     int getMovieCount() const;
     int getShowCount(int movieIndex) const;
+    void loadMovies(const std::string& filename);
+    void fromCSV(const std::string& filename);
+    void saveMovies(const std::string& filename);
+    void addMovie(const Movie& movie);
+    void deleteMovie(const std::string& movieId);
 };

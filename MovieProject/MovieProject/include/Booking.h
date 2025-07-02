@@ -10,6 +10,7 @@ private:
     std::vector<int> seatNumbers;
 
 public:
+    std::string toCSV() const;
     Booking(std::string uname, int showId, std::vector<int> seats);
 
     std::string getUsername() const;
@@ -20,4 +21,5 @@ public:
     void saveToFile() const;
 
     static std::vector<Booking> loadBookings(const std::string& username);
+    static Booking fromCSV(const std::string& line);
 };
